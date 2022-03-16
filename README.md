@@ -17,3 +17,5 @@ Exercise six: The mobile phone class
 Exercise seven: The lecturer class
 
 Exercise eight: Movies
+
+Exercise nine: Create an airplane class
