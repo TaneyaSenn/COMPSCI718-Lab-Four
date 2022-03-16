@@ -1,5 +1,6 @@
 package ictgradschool.airplane;
 
+// create class for an airplane
 public class airplane {
     private String colour;
     private double ticketPrice;
