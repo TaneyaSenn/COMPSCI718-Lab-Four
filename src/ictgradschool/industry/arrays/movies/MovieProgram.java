@@ -4,7 +4,7 @@ public class MovieProgram {
     public void start() {
         
         // TODO Step 1. Modify this line to construct an array of 19 Movie objects, called "films".
-        Movie[] films = null;
+        Movie[] films = new Movie[19];
         
         fillMoviesArray(films);                
         printMoviesArray(films);        
@@ -48,18 +48,33 @@ public class MovieProgram {
         System.out.println("Movie Collection");
         System.out.println("================");
         // TODO Step 2.  Complete the printMoviesArray() method
-
+        int i;
+        for (i = 0; i < films.length; i++) {
+            films[i].toString();
+        }
     }
     
     
     private Movie getMostRecentMovie(Movie[] films) {
         // TODO Step 3.  Complete the getMostRecentMovie() method.
-        return null;
+        Movie mostRecent = films[0]; // start at index 0 to compare
+        for (Movie film : films) {
+            if (film.isMoreRecentThan(mostRecent)) {
+                mostRecent = film;
+            }
+        }
+        return mostRecent;
     }
     
     private Movie getLongestMovie(Movie[] movies) {
         // TODO Step 4.  Complete the getLongest() method.
-        return null;
+        Movie longest = movies[0];
+        for (Movie film : movies) {
+            if (film.isLongerThan(longest)) {
+                longest = film;
+            }
+        }
+        return longest;
     }
     
     private void printResults(Movie mostRecent, Movie longest) {
