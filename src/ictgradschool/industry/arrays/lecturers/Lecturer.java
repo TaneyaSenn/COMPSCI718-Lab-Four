@@ -2,7 +2,7 @@ package ictgradschool.industry.arrays.lecturers;
 
 public class Lecturer {
 
-    // instance variables
+    // instance variables below
     private String name;
     private int staffId;
     private String[] papers;
