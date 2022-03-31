@@ -11,9 +11,11 @@ public class DisplayMobilePrices {
         printDescriptions(jonathansPhone, annsPhone, adrianasPhone, alastairsPhone);
 
         // TODO Uncomment these lines once you've implemented the corresponding MobilePhone methods.
-//        alastairsPhone.setBrand(new String ("Apple"));
-//         alastairsPhone.setModel(new String ("iPhone 4"));
-//         alastairsPhone.setPrice(899.95);
+      
+         alastairsPhone.setBrand(new String ("Apple"));
+         alastairsPhone.setModel(new String ("iPhone 4"));
+         alastairsPhone.setPrice(899.95);
+
         
         printNewPurchase("Alastair", alastairsPhone);
         
